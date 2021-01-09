@@ -1,0 +1,6 @@
+rootProject.name = "AllUi"
+include ':app'
+include ':toolbar'
+include ':navigationDrawer'
+include ':tabview'
+include ':bottomNavigation'

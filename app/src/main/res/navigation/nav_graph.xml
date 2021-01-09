@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.allui.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_toolbarFrag"
+            app:destination="@id/toolbarFrag" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_navigationDrawerActivity2"
+            app:destination="@id/navigationDrawerActivity2" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_tabViewActivity"
+            app:destination="@id/tabViewActivity" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_bottomNavigationActivity"
+            app:destination="@id/bottomNavigationActivity" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_myDialogFragment"
+            app:destination="@id/myDialogFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toolbarFrag"
+        android:name="com.example.allui.toolbar.ToolbarFrag"
+        android:label="fragment_toolbar"
+        tools:layout="@layout/fragment_toolbar" />
+    <activity
+        android:id="@+id/navigationDrawerActivity2"
+        android:name="com.example.allui.navigationdrawer.NavigationDrawerActivity"
+        android:label="activity_navigation_drawer"
+        tools:layout="@layout/activity_navigation_drawer" />
+    <activity
+        android:id="@+id/tabViewActivity"
+        android:name="com.example.allui.tabview.TabViewActivity"
+        android:label="activity_tab_view"
+        tools:layout="@layout/activity_tab_view" />
+    <activity
+        android:id="@+id/bottomNavigationActivity"
+        android:name="com.example.allui.bottomnavigation.BottomNavigationActivity"
+        android:label="activity_bottom_navigation"
+        tools:layout="@layout/activity_bottom_navigation" />
+    <dialog
+        android:id="@+id/myDialogFragment"
+        android:name="com.example.allui.dialogfragment.MyDialogFragment"
+        android:label="fragment_my_dialog"
+        tools:layout="@layout/dialog_custom_view" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.allui.menu.MenuFragment"
+        android:label="MenuFragment" />
+
+
+</navigation>
